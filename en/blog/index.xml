@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Kaiser Blog</title>
+    <link>https://kaiseru1612.github.io/otamegane/en/blog/</link>
+    <description>Recent content in Blogs on Kaiser Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jan 2024 22:09:48 +0700</lastBuildDate>
+    <atom:link href="https://kaiseru1612.github.io/otamegane/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown flavors</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/markdown/markdown_flavors/</link>
+      <pubDate>Fri, 26 Jan 2024 22:09:48 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/blog/technical/markdown/markdown_flavors/</guid>
+      <description>Markdown flavors Markdown flavors are variations or extensions of the original Markdown syntax, designed to offer additional functionality or slightly different syntax rules. Different platforms and applications often use their own custom Markdown flavors to suit their specific needs. Here are some common flavors of Markdown:&#xA;Standard Markdown&#xA;Developer: John Gruber Features: Basic features like headers, lists, links, and inline formatting. Notable: This is the original Markdown specification. CommonMark&#xA;Developer: Community effort led by John MacFarlane Features: A standardized and unambiguous version of Markdown.</description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/markdown/markdown/</link>
+      <pubDate>Fri, 26 Jan 2024 21:45:36 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/blog/technical/markdown/markdown/</guid>
+      <description>Introduction You may well have heard of Markdown, but it’s okay if you haven’t. The typical way that users first might encounter Markdown is through formatting text on internet message boards. You might have encountered it used on GitHub in readme files, at the very least. A professional use for Markdown is to write technical documentation. Technical writers have a dazzling array of options for producing their documentation. That’s why many writers opt for Markdown – it’s easy to use, and adaptable between different platforms (at least, in theory).</description>
+    </item>
+  </channel>
+</rss>

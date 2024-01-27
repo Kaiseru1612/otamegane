@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>me on Kaiser Blog</title>
+    <link>https://kaiseru1612.github.io/otamegane/en/tags/me/</link>
+    <description>Recent content in me on Kaiser Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jan 2024 00:55:50 +0700</lastBuildDate>
+    <atom:link href="https://kaiseru1612.github.io/otamegane/en/tags/me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/page/about/</link>
+      <pubDate>Fri, 26 Jan 2024 00:55:50 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/page/about/</guid>
+      <description>Hey there 👋 I&amp;rsquo;m Tiến. I&amp;rsquo;m a computer Engineering student who is passionate about writing code, solving problems, automating stuff, and IoT system.&#xA;👨🏻‍💻 About Me 🤔 Exploring new technologies. 🎓 Studied Computer Engineering at Ho Chi Minh University of Technology. 📚 Looking for interesting project to work with. 🛠 Tech Stack 💻 🌐 ⚙️ 🔧 🖥 🔎 Stats &amp;nbsp; 📌 Pin Repos &amp;nbsp; 🤝🏻 &amp;nbsp;Connect with Me ⭐️ From Kaiseru1612&#xD;</description>
+    </item>
+  </channel>
+</rss>

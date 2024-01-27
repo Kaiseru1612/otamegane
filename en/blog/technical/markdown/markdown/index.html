@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage"><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="icon" href="/favicon.svg">
+
+  <title>
+  Markdown - Kaiser Blog
+  </title>
+  <meta name="description" content="Markdown is a lightweight markup language that makes it easy to format plain text. It is designed to be easy to read and write, while also converting seamlessly into HTML." />
+  <meta name="author" content="Tran Vinh Tien" />
+  <meta name="generator" content="Hugo 0.121.2"><link
+    rel="stylesheet"
+    href="https://kaiseru1612.github.io/otamegane/css/styles.min.f0d48b4c6024e9ecee8f53b75d657d1f4f3963b73b9a61adee58d0494a0b1376.css"
+    integrity="sha256-8NSLTGAk6ezuj1O3XWV9H085Y7c7mmGt7ljQSUoLE3Y="
+  />
+  
+  
+
+  <meta property="og:title" content="Markdown" />
+<meta property="og:description" content="Markdown is a lightweight markup language that makes it easy to format plain text. It is designed to be easy to read and write, while also converting seamlessly into HTML." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kaiseru1612.github.io/otamegane/en/blog/technical/markdown/markdown/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2024-01-26T21:45:36+07:00" />
+<meta property="article:modified_time" content="2024-01-26T21:45:36+07:00" />
+
+
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Markdown"/>
+<meta name="twitter:description" content="Markdown is a lightweight markup language that makes it easy to format plain text. It is designed to be easy to read and write, while also converting seamlessly into HTML."/>
+
+  <meta itemprop="name" content="Markdown">
+<meta itemprop="description" content="Markdown is a lightweight markup language that makes it easy to format plain text. It is designed to be easy to read and write, while also converting seamlessly into HTML."><meta itemprop="datePublished" content="2024-01-26T21:45:36+07:00" />
+<meta itemprop="dateModified" content="2024-01-26T21:45:36+07:00" />
+<meta itemprop="wordCount" content="2486">
+<meta itemprop="keywords" content="technical,blog,markdown," />
+
+  
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen"><header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
+  <a href="https://kaiseru1612.github.io/otamegane/en/" class="capitalize font-extrabold text-2xl">
+    
+    Kaiser Blog
+    
+  </a>
+  <button class="mobile-menu-button md:hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <line x1="4" y1="8" x2="20" y2="8" />
+      <line x1="4" y1="16" x2="20" y2="16" />
+    </svg>
+  </button>
+  <ul class="mobile-menu absolute z-10 px-6 pb-6 md:p-0 top-full left-0 w-full md:w-auto md:relative hidden md:flex flex-col md:flex-row items-end md:items-center gap-4 lg:gap-6 bg-white dark:bg-gray-800">
+
+    
+    <li><a href="/otamegane/en/blog">Blog</a></li>
+    
+    <li><a href="/otamegane/en/page/about/">About</a></li>
+    
+    <li><a href="/otamegane/en/tags">Tags</a></li>
+    
+
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="open-search inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="10" cy="10" r="7" />
+          <line x1="21" y1="21" x2="15" y2="15" />
+        </svg>
+      </span>
+    </li>
+    
+
+    
+    <li class="grid place-items-center">
+      <span class="toggle-dark-mode inline-block cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="12" y1="5" x2="12" y2="5.01" />
+          <line x1="17" y1="7" x2="17" y2="7.01" />
+          <line x1="19" y1="12" x2="19" y2="12.01" />
+          <line x1="17" y1="17" x2="17" y2="17.01" />
+          <line x1="12" y1="19" x2="12" y2="19.01" />
+          <line x1="7" y1="17" x2="7" y2="17.01" />
+          <line x1="5" y1="12" x2="5" y2="12.01" />
+          <line x1="7" y1="7" x2="7" y2="7.01" />
+        </svg>
+      </span>
+    </li>
+    
+  </ul>
+</header>
+<main class="flex-1">
+  
+  
+
+  
+
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+
+    <h1 class="text-2xl font-bold mb-2">Markdown</h1>
+    
+    <h5 class="text-sm flex items-center flex-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      Posted on 
+  
+    January 26, 2024
+  
+
+
+      
+        &nbsp;&bull;&nbsp;
+      
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      12&nbsp;minutes
+      &nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      2486&nbsp;words
+      
+        
+      
+    </h5>
+    
+
+    <details id="TableOfContents" class="px-4 mt-4 bg-gray-100 dark:bg-gray-700 rounded toc">
+    <summary class="flex items-center font-bold py-2 px-4 cursor-pointer justify-between select-none text-black dark:text-white">
+      <span>Table of contents</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <polyline points="6 9 12 15 18 9"></polyline>
+     </svg>
+    </summary>
+
+    <ul class="mt-2 pb-4"><ul><ul>
+        
+
+        
+        <li>
+        <a href="#introduction">Introduction</a>
+        
+
+        
+        </li><li>
+        <a href="#what-is-markdown">What is markdown?</a>
+        
+
+        
+        </li><li>
+        <a href="#history-of-markdown">History of markdown</a>
+        
+
+        
+        </li><li>
+        <a href="#markdown-flavour">Markdown flavour</a>
+        
+
+        
+        </li><li>
+        <a href="#why-learn-markdown">Why Learn Markdown?</a>
+        
+
+        
+        </li><li>
+        <a href="#basics-of-markdown">Basics of Markdown</a>
+        
+
+        
+        <ul>
+            <li>
+        <a href="#headings">Headings</a>
+        
+
+        
+        </li></ul>
+      </li></ul>
+          </ul>
+          <li>
+        <a href="#heading-level-1">Heading level 1</a>
+        
+
+        
+        <ul>
+            <li>
+        <a href="#heading-level-2">Heading level 2</a>
+        
+
+        
+        <ul>
+            <li>
+        <a href="#heading-level-3">Heading level 3</a>
+        
+
+        
+        <ul>
+            <li>
+        <a href="#heading-level-4">Heading level 4</a>
+        
+
+        
+        </li><li>
+        <a href="#paragraphs">Paragraphs</a>
+        
+
+        
+        </li><li>
+        <a href="#emphasis">Emphasis</a>
+        
+
+        
+        </li><li>
+        <a href="#links-inline">Links (inline)</a>
+        
+
+        
+        </li><li>
+        <a href="#images">Images</a>
+        
+
+        
+        </li><li>
+        <a href="#lists">Lists</a>
+        
+
+        
+        </li><li>
+        <a href="#blockquotes">Blockquotes</a>
+        
+
+        
+        </li></ul>
+      </li><li>
+        <a href="#intermediate-markdown">Intermediate Markdown</a>
+        
+
+        
+        <ul>
+            <li>
+        <a href="#horizontal-rules">Horizontal rules</a>
+        
+
+        
+        </li><li>
+        <a href="#code-blocks-and-snippets">Code blocks and snippets</a>
+        </li></ul>
+    </li></ul>
+    </li></ul>
+    </li></ul>
+  </details>
+
+    <h3 id="introduction">Introduction</h3>
+<p>You may well have heard of Markdown, but it’s okay if you haven’t.
+The typical way that users first might encounter Markdown is through formatting text on internet message boards. You might have encountered it used on GitHub in readme files, at the very least. A professional use for Markdown is to write technical documentation.
+Technical writers have a dazzling array of options for producing their documentation. That’s why many writers opt for Markdown – it’s easy to use, and adaptable between different platforms (at least, in theory).</p>
+<h3 id="what-is-markdown">What is markdown?</h3>
+<p>Markdown is a lightweight markup language. It allows you to style a digital text document using typical formatting techniques: for example, headings, emphasis, lists, images, and links. Markdown files are stored as .md or .markdown. Also, Markdown can be optionally converted into XHTML or HTML to display nicely in a browser.</p>
+<p>Some of the many uses of Markdown are readme files, writing messages in online discussion forums, creating rich text using a plain text editor, emails, and technical documentation. Popular sites that use Markdown include GitHub, Trello, Reddit, SourceForge, and StackExchange, among many others.</p>
+<p>You, too, may want to use Markdown for formatting your documentation. It can be hosted by Static Site Generators such as Hugo which are linked with a text editor, or you can use an end-to-end proprietary solution to produce your Markdown files.</p>
+<p>This light-weight markup language is a compromise between restrictive WYSIWYG editors, and formatting content directly in HTML. Writers can have as much control over the presentation of their information without resorting to full HTML tagging. At the same time, Markdown parsers also support dropping in blocks of HTML code that add to Markdown’s limited syntax, in case you want to achieve a more complex design</p>
+<h3 id="history-of-markdown">History of markdown</h3>
+<p>Markdown was developed by John Gruber in collaboration with Aaron Schwartz in 2004, so it’s got a little bit of history. Gruber was tired of how complicated it was to format his web content using the standard HTML. That’s why he came up with Markdown.
+“The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.” – John Gruber</p>
+<p>Before Markdown, all that was available was other markup languages like HTML and LaTeX. Markdown arose as a lightweight markup language for web writers, many of whom are also developers. That makes Markdown an especially good solution for technical documentation that also requires collaboration with development teams.</p>
+<p>Back to the history. Conflicts soon arose concerning Markdown, which suffered from a lack of standardisation for the syntax. There was no
+Markdown specification, and Gruber remained unwilling to extend the syntax. People ended up developing their own, independent, implementations (also known as “flavours”). This led to problems converting Markdown from one system to another. For example, it’s more difficult than it should be to convert a GitHub wiki to docbook using Pandoc, due to incompatible syntax deviations.</p>
+<p>Unlike HTML, there is no internet standard for Markdown syntax. So, CommonMark was born as an unofficial initiative established to standardise all the different “flavours” of Markdown. CommonMark is a standard, unambiguous syntax specification for Markdown, alongside a suite of comprehensive tests that validate implementations of Markdown against the specification.</p>
+<p>Markdown was inspired by pre-existing conventions for marking up plain text in email and usenet posts, such as the earlier markup languages setext (c. 1992), Textile (c. 2002), and reStructuredText (c. 2002).</p>
+<p>In 2002 Aaron Swartz created atx and referred to it as &ldquo;the true structured text format&rdquo;. Gruber and Swartz created the Markdown language in 2004, with the goal of enabling people &ldquo;to write using an easy-to-read and easy-to-write plain text format, optionally convert it to structurally valid XHTML (or HTML).&rdquo;</p>
+<p>Its key design goal was readability, that the language be readable as-is, without looking like it has been marked up with tags or formatting instructions, unlike text formatted with &lsquo;heavier&rsquo; markup languages, such as Rich Text Format (RTF), HTML, or even wikitext (each of which have obvious in-line tags and formatting instructions which can make the text more difficult for humans to read).</p>
+<p>Gruber wrote a Perl script, Markdown.pl, which converts marked-up text input to valid, well-formed XHTML or HTML and replaces angle brackets (&lt;, &gt;) and ampersands (&amp;) with their corresponding character entity references. It can take the role of a standalone script, a plugin for Blosxom or a Movable Type, or of a text filter for BBEdit.</p>
+<h3 id="markdown-flavour">Markdown flavour</h3>
+<p>As we just mentioned, the unstandardised nature of Markdown has given rise to a number of popular “flavours” – essentially, extensions of the original Markdown syntax. The reason for this is to add extra functionality not available in the original syntax, such as tables, references, and syntax highlighting.</p>
+<p>Some flavours of Markdown have become very commonly used, such as the GitHub flavour, which is called GitHub Flavored Markdown (GFM). It includes extra features such as tables, programming language selection, and syntax colouring.</p>
+<p>Taking into account the Markdown flavours, your Markdown files may not always be compatible with different editors if they don’t support the extra syntax used. This lack of consistency among implementations of Markdown is one of the main issues that people have with it.</p>
+<p>Here’s a list of the most common flavours of Markdown available today. <a href="./markdown_flavors.md">Markdown Flavor</a>
+</p>
+<h3 id="why-learn-markdown">Why Learn Markdown?</h3>
+<p>Despite having some issues, Markdown is used by many people. You don’t even have to be a developer to pick up the basics. The advantage of Markdown is that once you know how it works, it’s very easy to write. It’s intuitively easy to pick up because it’s based on email formatting conventions that many people have been exposed to already.</p>
+<p>Markdown offers a smoother workflow than traditional publishing systems. Unlike in a normal writing User Interface, such as Microsoft Word or Google Docs, you don’t have to stop writing to select formatting buttons. Formatting is included in-line with your text, and it looks like the effect it’s intended to create. In other words, a list looks like a list, and <strong>emphasis</strong> looks like emphasis.</p>
+<p>You can also easily read Markdown in its raw state, unlike for example raw HTML, which is full of tags. The Markdown syntax flows perfectly with the rest of your writing, and it’s intuitively clear what the syntax means.</p>
+<p>Markdown files are portable, and can be opened in any editor compatible with Markdown, in case you want to change applications. Although in practice, this may not be as simple, it’s a good option to have. Markdown is platform-independent, which means you can create Markdown files in any text editor. It’s useful across many different websites and applications.</p>
+<p>It’s a reusable skill. Markdown is versatile, so you learn it once, and you can use it for lots of different activities. You can use Markdown to take notes, create content for a website, or produce print-ready documents.</p>
+<h3 id="basics-of-markdown">Basics of Markdown</h3>
+<p>It’s worth learning the basic Markdown syntax outlined by John Gruber, which is supported by the majority of Markdown applications. You’re likely to find the syntax of Markdown relatively intuitive to pick up. It’s also possible to write directly in HTML in any Markdown file, if you prefer.</p>
+<p>You can get started right now with Markdown in the browser using a tool such as Dillinger.</p>
+<h4 id="headings">Headings</h4>
+<p>All Markdown files should contain headers. You need a level 1 header for the title of your Markdown file, and at least level 2 headers for the subheadings within the body text. Headings make your text more readable and help to break up the topics.</p>
+<p>In Markdown, headings are formatted with hashes (#) in front of the line containing your heading. You can use up to six hashes, with the number of hashes corresponding to a heading level.</p>
+<pre tabindex="0"><code># Heading level 1
+## Heading level 2
+### Heading level 3
+#### Heading level 4
+##### Heading level 5
+###### Heading level 6
+</code></pre><p>Your text will look like this:</p>
+<h1 id="heading-level-1">Heading level 1</h1>
+<h2 id="heading-level-2">Heading level 2</h2>
+<h3 id="heading-level-3">Heading level 3</h3>
+<h4 id="heading-level-4">Heading level 4</h4>
+<h5 id="heading-level-5">Heading level 5</h5>
+<h6 id="heading-level-6">Heading level 6</h6>
+<h4 id="paragraphs">Paragraphs</h4>
+<p>When writing your Markdown body text, you’ll likely want to split your information up into paragraphs (with a noticeable gap between each paragraph).</p>
+<p>Paragraphs are divided by a blank line (a line containing no characters) between consecutive paragraphs.</p>
+<p>Your text will look like this:
+Paragraph 1</p>
+<p>Paragraph 2</p>
+<p>Line breaks</p>
+<p>Sometimes, you’ll want to split your information up by inserting a new line, with less space than you’d get from formatting as a paragraph. This is called a line break.</p>
+<p>To insert a line break into your Markdown file, finish your line with at least two spaces and press return. This will render a new line for your text.</p>
+<p>Your text will look like this:
+Line 1
+Line 2</p>
+<h4 id="emphasis">Emphasis</h4>
+<p>When writing your content in Markdown, you might want to place a bit more emphasis on certain words or phrases. The first way you can emphasise your text is in italics.</p>
+<p>You can make your text italic by wrapping your text with one asterisk on each side (alternatively, you can use underscores in place of the asterisks). Once your application detects the second asterisk, your formatting for this element is considered “closed”.</p>
+<pre tabindex="0"><code>*This text is italic*
+_This text is also italic_
+</code></pre><p>Your text will look like this:
+<em>This text is italic</em>
+<em>This text is also italic</em></p>
+<p>Bold formatting provides a slightly heavier emphasis than italics, but it works in exactly the same way. This time, use two asterisks to wrap the text you want to make bold (alternatively, you can use underscores in place of asterisks).</p>
+<pre tabindex="0"><code>**This text is bold**
+__This text is also bold__
+</code></pre><p>Your text will look like this:
+<strong>This text is bold</strong>
+<strong>This text is also bold</strong></p>
+<p>If you really want to make a point, you can make your text simultaneously bold and italic to give it even more weight! To make your text bold and italic, use three asterisks (or three underscores) to wrap your word or phrase.</p>
+<pre tabindex="0"><code>***This text is italic and bold.***
+___This text is also italic and bold___
+</code></pre><p>Your text will look like this:
+<em><strong>This text is italic and bold.</strong></em>
+<em><strong>This text is also italic and bold</strong></em></p>
+<h4 id="links-inline">Links (inline)</h4>
+<p>Sometimes we want to link to external websites when writing Markdown content. There’s a simple way to do this using two sets of brackets.
+To format an inline link in Markdown, you use square brackets to wrap your link text. Place the square-bracket wrapped link text alongside parentheses containing your URL (make sure you don’t include a space between the link text and the link).</p>
+<pre tabindex="0"><code>[This is link text](https://google.com)
+</code></pre><p>Your text will look like this:
+<a href="https://google.com" target="_blank" rel="noopener">This is link text</a>
+
+If you want to add title to your link, insert your alt text next to the link inside quotation marks</p>
+<pre tabindex="0"><code>[This is link text](https://google.com &#34;google&#34;)
+</code></pre><p>Your text will look like this:
+<a href="https://google.com" title="google" target="_blank" rel="noopener">This is link text</a>
+</p>
+<p>Note that if you want to link to a local file, within the same server as your other Markdown files, you can format your link with a forward slash followed by the relative URL.
+Your text will look like this:
+[This is link text](/This is a relative URL “This is a title”)</p>
+<h4 id="images">Images</h4>
+<p>A picture is worth a thousand words, as they say. Inserting an image into your Markdown file is similar to the formatting for links.</p>
+<p>Begin your image formatting with an exclamation mark. Next, use square brackets to wrap your image alt text, next to parentheses containing the URL for your image. Ensure there are no spaces between the exclamation mark, square brackets, or parentheses.</p>
+<p>Your text will look like this:
+<img src="data:image/jpeg;base64,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" alt="This is image text">
+When your Markdown file is rendered to HTML, the image will be embedded directly into the body text.</p>
+<h4 id="lists">Lists</h4>
+<h5 id="unordered-lists">Unordered lists</h5>
+<p>Sometimes, you may want to format your content in lists to make it easier to read.</p>
+<p>The first option is to use an unordered list, where each item on your list is preceded by a bullet point. Markdown allows you to format your lists with a number of different symbols: asterisks (*), hyphens (-) or plus signs (+).</p>
+<p>It’s up to you to choose which symbol you prefer. The result you get is the same.</p>
+<pre tabindex="0"><code>* This is a list item
+* This is a list item
+* This is a list item
+* This is a list item
+</code></pre><p>Here is an example list:</p>
+<ul>
+<li>This is a list item</li>
+<li>This is a list item</li>
+<li>This is a list item</li>
+<li>This is a list item</li>
+</ul>
+<h5 id="ordered-lists">Ordered lists</h5>
+<p>Other times, you may want to present your information sequentially in ordered lists (1, 2, 3, and so on). Format your ordered lists by preceding each list item with a number, followed by a full stop and then a space.</p>
+<p>In Markdown, it doesn’t matter which numbers you use to format your list, as the list will always render as 1, 2, 3, and so on.
+Your text will look like this:</p>
+<ol>
+<li>This is a list item</li>
+<li>This is a list item</li>
+<li>This is a list item</li>
+<li>This is a list item</li>
+</ol>
+<h4 id="blockquotes">Blockquotes</h4>
+<p>Sometimes in Markdown, we will want to reference an external source using quotation marks. This is called a blockquote. You represent any blockquote by preceding the first line of the block quote with a greater-than sign or angle bracket (&gt;). Gruber recommends inserting the angle bracket before every line of your blockquote.</p>
+<p>Your text will look like this:</p>
+<blockquote>
+<p>This is a blockquote
+This is a blockquote
+This is a blockquote</p>
+</blockquote>
+<h3 id="intermediate-markdown">Intermediate Markdown</h3>
+<p>Now you’ve got to grips with basic Markdown, you might want to attempt some slightly more advanced formatting.</p>
+<h4 id="horizontal-rules">Horizontal rules</h4>
+<p>A horizontal rule is a useful little element that you can use to visually split up blocks of text within your Markdown file. A horizontal rule is represented by three or more hyphens (-), asterisks (*), or underscores (_). Whichever symbol you use renders the same output.</p>
+<p>Your text will look like this:
+—</p>
+<h4 id="code-blocks-and-snippets">Code blocks and snippets</h4>
+<h5 id="code-snippets">Code snippets</h5>
+<p>Often when we’re writing in Markdown, we need to reference snippets of code as examples. This is particularly common in technical documentation. Markdown allows you to format code snippets using backticks (`) that wrap your code snippet. The first backtick “opens” the snippet, and the second backtick “closes” it.</p>
+<p>Your text will look like this:
+<code>This is a code snippet</code></p>
+<h5 id="code-blocks">Code blocks</h5>
+<p>Formatting code blocks is useful when you have a bigger chunk of code to include in your Markdown file. Format your code blocks by indenting every line of your code block using one tab, or four spaces.
+This is a code block
+This is a code block
+This is a code block
+Remember, some extensions of Markdown, such as GitHub Flavored Markdown, support programming language selection and syntax colouring. Original Markdown does not support these styles.</p>
+
+  </article>
+<div class="px-2 mb-2">
+  
+  <script src="https://giscus.app/client.js"
+    data-repo=""
+    data-repo-id=""
+    data-category=""
+    data-category-id=""
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    crossorigin="anonymous"
+    async>
+  </script>
+  
+</div>
+<div class="bg-blue-100 dark:bg-gray-900">
+  <div class="container px-4 py-12 mx-auto max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+    <div>
+      <div class="text-2xl font-bold mb-2">Follow me</div>
+      <p class="opacity-60">I work on everything coding and tweet developer memes</p>
+    </div>
+
+    <ul class="flex justify-center gap-x-3 flex-wrap gap-y-2">
+      
+
+      
+      <li>
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Twitter"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+            />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="www.linkedin.com/in/ti%e1%ba%bfn-tr%e1%ba%a7n-v%c4%a9nh-2b2b30227"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://www.xing.com/profile/"
+          target="_blank"
+          rel="noopener"
+          aria-label="xing"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14.48736,22.8L9.65664,14.33208L17.154,1.2H22.2L14.70288,14.33208L19.53384,22.8H14.48736z M6.55728,16.26888l3.74808-6.17064l-2.81088-4.9512 H2.73696l2.81112,4.9512L1.8,16.26888H6.55728z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://t.me/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Telegram"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+           <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-telegram"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://github.com/Kaiseru1612"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+            />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://www.buymeacoffee.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Buy Me A Coffee"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M20.216 6.415l-.132-.666c-.119-.598-.388-1.163-1.001-1.379-.197-.069-.42-.098-.57-.241-.152-.143-.196-.366-.231-.572-.065-.378-.125-.756-.192-1.133-.057-.325-.102-.69-.25-.987-.195-.4-.597-.634-.996-.788a5.723 5.723 0 00-.626-.194c-1-.263-2.05-.36-3.077-.416a25.834 25.834 0 00-3.7.062c-.915.083-1.88.184-2.75.5-.318.116-.646.256-.888.501-.297.302-.393.77-.177 1.146.154.267.415.456.692.58.36.162.737.284 1.123.366 1.075.238 2.189.331 3.287.37 1.218.05 2.437.01 3.65-.118.299-.033.598-.073.896-.119.352-.054.578-.513.474-.834-.124-.383-.457-.531-.834-.473-.466.074-.96.108-1.382.146-1.177.08-2.358.082-3.536.006a22.228 22.228 0 01-1.157-.107c-.086-.01-.18-.025-.258-.036-.243-.036-.484-.08-.724-.13-.111-.027-.111-.185 0-.212h.005c.277-.06.557-.108.838-.147h.002c.131-.009.263-.032.394-.048a25.076 25.076 0 013.426-.12c.674.019 1.347.067 2.017.144l.228.031c.267.04.533.088.798.145.392.085.895.113 1.07.542.055.137.08.288.111.431l.319 1.484a.237.237 0 01-.199.284h-.003c-.037.006-.075.01-.112.015a36.704 36.704 0 01-4.743.295 37.059 37.059 0 01-4.699-.304c-.14-.017-.293-.042-.417-.06-.326-.048-.649-.108-.973-.161-.393-.065-.768-.032-1.123.161-.29.16-.527.404-.675.701-.154.316-.199.66-.267 1-.069.34-.176.707-.135 1.056.087.753.613 1.365 1.37 1.502a39.69 39.69 0 0011.343.376.483.483 0 01.535.53l-.071.697-1.018 9.907c-.041.41-.047.832-.125 1.237-.122.637-.553 1.028-1.182 1.171-.577.131-1.165.2-1.756.205-.656.004-1.31-.025-1.966-.022-.699.004-1.556-.06-2.095-.58-.475-.458-.54-1.174-.605-1.793l-.731-7.013-.322-3.094c-.037-.351-.286-.695-.678-.678-.336.015-.718.3-.678.679l.228 2.185.949 9.112c.147 1.344 1.174 2.068 2.446 2.272.742.12 1.503.144 2.257.156.966.016 1.942.053 2.892-.122 1.408-.258 2.465-1.198 2.616-2.657.34-3.332.683-6.663 1.024-9.995l.215-2.087a.484.484 0 01.39-.426c.402-.078.787-.212 1.074-.518.455-.488.546-1.124.385-1.766zm-1.478.772c-.145.137-.363.201-.578.233-2.416.359-4.866.54-7.308.46-1.748-.06-3.477-.254-5.207-.498-.17-.024-.353-.055-.47-.18-.22-.236-.111-.71-.054-.995.052-.26.152-.609.463-.646.484-.057 1.046.148 1.526.22.577.088 1.156.159 1.737.212 2.48.226 5.002.19 7.472-.14.45-.06.899-.13 1.345-.21.399-.072.84-.206 1.08.206.166.281.188.657.162.974a.544.544 0 01-.169.364zm-6.159 3.9c-.862.37-1.84.788-3.109.788a5.884 5.884 0 01-1.569-.217l.877 9.004c.065.78.717 1.38 1.5 1.38 0 0 1.243.065 1.658.065.447 0 1.786-.065 1.786-.065.783 0 1.434-.6 1.499-1.38l.94-9.95a3.996 3.996 0 00-1.322-.238c-.826 0-1.491.284-2.26.613z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://medium.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Medium"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <path d="M8 9h1l3 3l3 -3h1" />
+            <line x1="8" y1="15" x2="10" y2="15" />
+            <line x1="14" y1="15" x2="16" y2="15" />
+            <line x1="9" y1="9" x2="9" y2="15" />
+            <line x1="15" y1="9" x2="15" y2="15" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://reddit.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Medium"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M12 8c2.648 0 5.028 .826 6.675 2.14a2.5 2.5 0 0 1 2.326 4.36c0 3.59 -4.03 6.5 -9 6.5c-4.875 0 -8.845 -2.8 -9 -6.294l-1 -.206a2.5 2.5 0 0 1 2.326 -4.36c1.646 -1.313 4.026 -2.14 6.674 -2.14z"
+            />
+            <path d="M12 8l1 -5l6 1" />
+            <circle cx="19" cy="4" r="1" />
+            <circle cx="9" cy="13" r=".5" fill="currentColor" />
+            <circle cx="15" cy="13" r=".5" fill="currentColor" />
+            <path d="M10 17c.667 .333 1.333 .5 2 .5s1.333 -.167 2 -.5" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://dribbble.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Dribbble"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-dribbble"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M9 3.6c5 6 7 10.5 7.5 16.2" />
+            <path d="M6.4 19c3.5 -3.5 6 -6.5 14.5 -6.4" />
+            <path d="M3.1 10.75c5 0 9.814 -.38 15.314 -5" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://stackoverflow.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="stackoverflow"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-stackoverflow"
+              width="23"
+              height="23"
+              viewBox="-135 22 32 38"
+              stroke-width="0.2"
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+          >
+            <polygon points="-108.5,56.2 -108.5,46.3 -105.2,46.3 -105.2,59.5 -135,59.5 -135,46.3 -131.7,46.3 -131.7,56.2       "/>
+            <path d="M-128,45.4l16.2,3.4l0.7-3.2l-16.2-3.4L-128,45.4z M-125.9,37.6l15,7l1.4-3l-15-7L-125.9,37.6z     M-121.7,30.2l12.7,10.6l2.1-2.5l-12.7-10.6L-121.7,30.2z M-113.5,22.4l-2.7,2l9.9,13.3l2.7-2L-113.5,22.4z M-128.4,52.9h16.6    v-3.3h-16.6V52.9z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://forum.xda-developers.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="XDA"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+           <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-xda"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M13.84 3.052V0h7.843v17.583H13.84v-3.024h4.591V3.052zM5.569 14.53V3.024h4.592V0H2.318v17.583H6.98L10.16 24v-9.483z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://tiktok.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Tiktok"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-tiktok"
+              width="23"
+              height="23"
+              viewBox="0 0 448 512"
+              stroke-width="30"
+              stroke="currentColor"
+              fill="none">
+            <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://scholar.google.com/"
+          target="_blank"
+          rel="noopener"
+          aria-label="Google Scholar"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-brand-googlescholar"
+              width="22"
+              height="23"
+              viewBox="0 0 24 24"
+              stroke-width="1.4"
+              stroke="currentColor"
+              fill="none">
+            <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="YouTube"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-youtube"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-instagram"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+            <circle cx="12" cy="12" r="9" />
+            <path d="M10 9l5 3l-5 3z" />
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+      <li>
+        <a
+          href="https://www.facebook.com/Otamegane.1612"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook"
+          class="p-1 inline-block rounded-full border border-transparent text-gray-500 hover:text-gray-800 hover:border-gray-800 cursor-pointer transition-colors dark:text-gray-600 dark:hover:border-gray-300 dark:hover:text-gray-300"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+          </svg>
+        </a>
+      </li>
+      
+
+      
+
+      
+
+
+    </ul>
+  </div>
+</div>
+
+    </main><footer class="container p-6 mx-auto flex justify-between items-center">
+  <span class="text-sm font-light">
+    
+    Copyright © 2024 - Vinh Tien (Kaiser) · All rights reserved
+    
+  </span>
+  <span onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="p-1 cursor-pointer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M18 15l-6 -6l-6 6h12" />
+    </svg>
+  </span>
+</footer>
+
+<div class="search-ui absolute top-0 left-0 w-full h-full bg-white dark:bg-gray-800 hidden">
+  <div class="container max-w-3xl mx-auto p-12">
+    <div class="relative">
+      <div class="my-4 text-center text-2xl font-bold">Search</div>
+
+      <span class="p-2 absolute right-0 top-0 cursor-pointer close-search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </span>
+    </div>
+
+    <input type="search" class="py-2 px-3 w-full dark:text-black border dark:border-transparent"
+      placeholder="Enter search query" />
+
+    <div class="search-results text-lg font-medium my-4 hidden">Results</div>
+    <ul class="search-list my-2">
+
+    </ul>
+
+    <div class="no-results text-center my-8 hidden">
+      <div class="text-xl font-semibold mb-2">No results found</div>
+      <p class="font-light text-sm">Try adjusting your search query</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://kaiseru1612.github.io/otamegane/js/scripts.min.js"></script>
+
+
+
+
+
+
+<script>
+  
+  const darkmode = document.querySelector('.toggle-dark-mode');
+  function toggleDarkMode() {
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('darkmode', 'light')
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('darkmode', 'dark')
+    }
+  }
+  if (darkmode) {
+    darkmode.addEventListener('click', toggleDarkMode);
+  }
+
+  const darkStorage = localStorage.getItem('darkmode');
+  const isBrowserDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (!darkStorage && isBrowserDark) {
+    document.documentElement.classList.add('dark');
+  }
+
+  if (darkStorage && darkStorage === 'dark') {
+    toggleDarkMode();
+  }
+</script>
+
+
+<script>
+  const mobileMenuButton = document.querySelector('.mobile-menu-button')
+  const mobileMenu = document.querySelector('.mobile-menu')
+  function toggleMenu() {
+    mobileMenu.classList.toggle('hidden');
+    mobileMenu.classList.toggle('flex');
+  }
+  if(mobileMenu && mobileMenuButton){
+    mobileMenuButton.addEventListener('click', toggleMenu)
+  }
+</script>
+</body>
+</html>

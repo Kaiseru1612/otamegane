@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Kaiser Blog</title>
+    <link>https://kaiseru1612.github.io/otamegane/en/tags/</link>
+    <description>Recent content in Tags on Kaiser Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 26 Jan 2024 22:09:48 +0700</lastBuildDate>
+    <atom:link href="https://kaiseru1612.github.io/otamegane/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blog</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/tags/blog/</link>
+      <pubDate>Fri, 26 Jan 2024 22:09:48 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>markdown</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/tags/markdown/</link>
+      <pubDate>Fri, 26 Jan 2024 22:09:48 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>technical</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/tags/technical/</link>
+      <pubDate>Fri, 26 Jan 2024 22:09:48 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/tags/technical/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>about</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/tags/about/</link>
+      <pubDate>Fri, 26 Jan 2024 00:55:50 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/tags/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>me</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/tags/me/</link>
+      <pubDate>Fri, 26 Jan 2024 00:55:50 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/tags/me/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
