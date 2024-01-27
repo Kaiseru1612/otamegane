@@ -6,8 +6,15 @@
     <description>Recent content on Kaiser Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jan 2024 22:09:48 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jan 2024 16:52:28 +0700</lastBuildDate>
     <atom:link href="https://kaiseru1612.github.io/otamegane/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SVM</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/algorithms/svm/</link>
+      <pubDate>Sat, 27 Jan 2024 16:52:28 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/blog/technical/algorithms/svm/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Markdown flavors</title>
       <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/markdown/markdown_flavors/</link>
