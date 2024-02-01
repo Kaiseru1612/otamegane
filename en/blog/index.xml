@@ -6,8 +6,22 @@
     <description>Recent content in Blogs on Kaiser Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jan 2024 23:01:58 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 01 Feb 2024 01:05:06 +0700</lastBuildDate>
     <atom:link href="https://kaiseru1612.github.io/otamegane/en/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Manage common threats, risks, and vulnerabilities</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/security/manage_common_threads_risks_and_vulnerabilities/</link>
+      <pubDate>Thu, 01 Feb 2024 01:05:06 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/blog/technical/security/manage_common_threads_risks_and_vulnerabilities/</guid>
+      <description>Risk management A primary goal of organizations is to protect assets. An asset is an item perceived as having value to an organization. Assets can be digital or physical. Examples of digital assets include the personal information of employees, clients, or vendors, such as:&#xA;Social Security Numbers (SSNs), or unique national identification numbers assigned to individuals Dates of birth Bank account numbers Mailing addresses Examples of physical assets include:&#xA;Payment kiosks Servers Desktop computers Office spaces Some common strategies used to manage risks include:</description>
+    </item>
+    <item>
+      <title>Security domains cybersecurity analysts need to know</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/security/need_to_know/</link>
+      <pubDate>Wed, 31 Jan 2024 23:17:11 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/blog/technical/security/need_to_know/</guid>
+      <description>Domain one: Security and risk management All organizations must develop their security posture. Security posture is an organization’s ability to manage its defense of critical assets and data and react to change. Elements of the security and risk management domain that impact an organization&amp;rsquo;s security posture include:&#xA;Security goals and objectives Risk mitigation processes Compliance Business continuity plans Legal regulations Professional and organizational ethics Information security, or InfoSec, is also related to this domain and refers to a set of processes established to secure information.</description>
+    </item>
     <item>
       <title>Color Palette Storage</title>
       <link>https://kaiseru1612.github.io/otamegane/en/blog/material/color_pallete/color_pallete/</link>

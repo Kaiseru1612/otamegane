@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://kaiseru1612.github.io/otamegane/en/tags/blog/</loc>
-    <lastmod>2024-01-26T23:01:58+07:00</lastmod>
-  </url><url>
     <loc>https://kaiseru1612.github.io/otamegane/en/blog/</loc>
+    <lastmod>2024-02-01T01:05:06+07:00</lastmod>
+  </url><url>
+    <loc>https://kaiseru1612.github.io/otamegane/en/</loc>
+    <lastmod>2024-02-01T01:05:06+07:00</lastmod>
+  </url><url>
+    <loc>https://kaiseru1612.github.io/otamegane/en/blog/technical/security/manage_common_threads_risks_and_vulnerabilities/</loc>
+    <lastmod>2024-02-01T01:05:06+07:00</lastmod>
+  </url><url>
+    <loc>https://kaiseru1612.github.io/otamegane/en/blog/technical/security/need_to_know/</loc>
+    <lastmod>2024-01-31T23:17:11+07:00</lastmod>
+  </url><url>
+    <loc>https://kaiseru1612.github.io/otamegane/en/tags/blog/</loc>
     <lastmod>2024-01-26T23:01:58+07:00</lastmod>
   </url><url>
     <loc>https://kaiseru1612.github.io/otamegane/en/tags/color/</loc>
     <lastmod>2024-01-26T23:01:58+07:00</lastmod>
   </url><url>
     <loc>https://kaiseru1612.github.io/otamegane/en/blog/material/color_pallete/color_pallete/</loc>
-    <lastmod>2024-01-26T23:01:58+07:00</lastmod>
-  </url><url>
-    <loc>https://kaiseru1612.github.io/otamegane/en/</loc>
     <lastmod>2024-01-26T23:01:58+07:00</lastmod>
   </url><url>
     <loc>https://kaiseru1612.github.io/otamegane/en/tags/material/</loc>
