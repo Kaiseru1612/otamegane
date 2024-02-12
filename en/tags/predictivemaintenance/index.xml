@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PredictiveMaintenance on Kaiser Blog</title>
+    <link>https://kaiseru1612.github.io/otamegane/en/tags/predictivemaintenance/</link>
+    <description>Recent content in PredictiveMaintenance on Kaiser Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Feb 2024 23:33:47 +0700</lastBuildDate>
+    <atom:link href="https://kaiseru1612.github.io/otamegane/en/tags/predictivemaintenance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Predictive Maintainance</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/predictive_maintainace/</link>
+      <pubDate>Thu, 08 Feb 2024 23:33:47 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/blog/technical/predictive_maintainace/</guid>
+      <description>What is predictive maintenance (PdM)? Predictive maintenance (PdM) uses data analysis to identify operational anomalies and potential equipment defects, enabling timely repairs before failures occur. It aims to minimize maintenance frequency, avoiding unplanned outages and unnecessary preventive maintenance costs.&#xA;When is predictive maintenance suitable? Suitable applications Applications that are suitable for predictive maintenance (PdM) include those that:&#xA;Have a critical operational function Have failure modes that can be cost-effectively predicted with regular monitoring Unsuitable applications Unsuitable applications for predictive maintenance include those that:</description>
+    </item>
+  </channel>
+</rss>

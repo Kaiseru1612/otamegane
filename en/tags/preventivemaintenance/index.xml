@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PreventiveMaintenance on Kaiser Blog</title>
+    <link>https://kaiseru1612.github.io/otamegane/en/tags/preventivemaintenance/</link>
+    <description>Recent content in PreventiveMaintenance on Kaiser Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 08 Feb 2024 23:38:05 +0700</lastBuildDate>
+    <atom:link href="https://kaiseru1612.github.io/otamegane/en/tags/preventivemaintenance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Preventive Maintainance</title>
+      <link>https://kaiseru1612.github.io/otamegane/en/blog/technical/preventive_maintainace/</link>
+      <pubDate>Thu, 08 Feb 2024 23:38:05 +0700</pubDate>
+      <guid>https://kaiseru1612.github.io/otamegane/en/blog/technical/preventive_maintainace/</guid>
+      <description>What is Preventive Maintainance? Preventive maintenance is the act of performing regularly scheduled maintenance activities to help prevent unexpected failures in the future. Put simply, it’s about fixing things before they break.&#xA;Why is preventive maintenance important? Preventive maintenance is important because it lays the foundation for successful facility management. Preventive maintenance keeps equipment and assets running efficiently, maintains a high safety level for your employees, and helps you avoid large and costly repairs down the road.</description>
+    </item>
+  </channel>
+</rss>
